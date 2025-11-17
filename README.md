@@ -57,7 +57,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  Tijdens mijn screenreader test merkte ik dat veel headings incorrect zijn. Zo staan er op de homepagina 3 verschillende H1 headings, wordt H3 heading helemaal niet gebruikt en hebben sommige headings de verkeerde H[nummer]
+  Tijdens mijn screenreader test merkte ik dat veel headings incorrect zijn. Zo staan er op de homepagina 3 verschillende H1 headings, wordt H3 heading helemaal niet gebruikt, hebben sommige headings de verkeerde H[nummer] en zijn sommige elementen een heading die geen heading moeten zijn.
 
 </details>
 
