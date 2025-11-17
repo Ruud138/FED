@@ -70,24 +70,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele home pagina: 
-  <img src="readme-images/Home-scherm-breakdown.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Home-scherm-breakdown.png" width="375px" alt="breakdown van de hele home pagina">
 
-  ### dynamisch deel home pagina (hamburger menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### content home pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### dynamisch deel home pagina: 
+  <img src="readme-images/Home-scherm-content.png" width="375px" alt="breakdown van een dynamisch deel op de home pagina">
 
 
 
   ### de hele menu pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Menu-scherm-breakdown.png" width="375px" alt="breakdown van de hele menu pagina">
 
   ### dynamisch deel menu pagina (hamburger menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### content menu pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Menu-scherm-content.png" width="375px" alt="breakdown van een dynamisch deel op de menu pagina">
 
 </details>
 
