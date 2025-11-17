@@ -52,11 +52,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   Tijdens mijn screenreader test merkte ik dat veel headings incorrect zijn. Zo staan er op de homepagina 3 verschillende H1 headings, wordt H3 heading helemaal niet gebruikt, hebben sommige headings de verkeerde H[nummer] en zijn sommige elementen een heading die geen heading moeten zijn.
+  
   Het testen van de links ging beter. Deze zijn grotendeels correct en duidelijk ingesteld. De header/navigatie werkt goed en is duidelijk. Onderaan de homepagina staan een aantal Instagram posts van het WildAndTheMoon Instagram account gelinkt. Ieder van deze foto links die hier staan hebben een alt gekregen die door de screenreader voorgelezen wordt. Deze alts zijn de originele tekst die bij de Instagram post in de bio staat maar deze zijn niet duidelijk en leggen niet uit wat er op de foto staat. Wanneer de screenreader deze teksten begint voor te lezen is er geen touw meer aan vast te knopen en heb je als gebruiker geen idee waar je naar "kijkt"/navigeert.
 
 </details>
@@ -68,14 +69,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
+  ### de hele home pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### dynamisch deel home pagina (hamburger menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### content home pagina: 
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+
+
+
+  ### de hele menu pagina: 
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+
+  ### dynamisch deel menu pagina (hamburger menu): 
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+
+  ### content menu pagina: 
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
