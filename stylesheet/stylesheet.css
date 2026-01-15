@@ -1,0 +1,1561 @@
+/* /////////////////////////// */
+/* ////////// Fonts ////////// */
+/* /////////////////////////// */
+/* Light (300) */
+@font-face {
+    font-family: "CiutadellaRounded";
+    src: url("/media/fonts/ciutadella_rounded/Ciutadella_Rounded_Light_Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+/* Medium (500) */
+@font-face {
+    font-family: "CiutadellaRounded";
+    src: url("/media/fonts/ciutadella_rounded/Ciutadella_Rounded_Medium_Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+/* SemiBold (600) */
+@font-face {
+    font-family: "CiutadellaRounded";
+    src: url("/media/fonts/ciutadella_rounded/Ciutadella_Rounded_SemiBold_Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "CiutadellaRounded";
+    src: url("/media/fonts/ciutadella_rounded/Ciutadella_Rounded_Bold_Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TrinityIconfont";
+    src: url("/media/fonts/iconfont/trinity_Iconfont.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+
+/* ////////////////////////// */
+/* ///// Root variables ///// */
+/* ////////////////////////// */
+:root {
+    /* Kleuren */
+    --achtergrond-wit: #fff;
+    --achtergrond-licht-blauw: #e6f2f5;
+
+    --huisstijl-paars: #aa418c;
+    --huisstijl-donker-paars: #883370;
+    --huisstijl-oranje: #ff9300;
+
+    --titel-blauw: #00526e;
+
+    --tekst-grijs: #343434;
+    --tekst-wit: #fff;
+
+    --link-blauw: #0070b9;
+
+    --lijn-grijs: #bebebe;
+    --lijn-medium-grijs: #949494;
+    --lijn-donker-grijs: #757575;
+
+    --lijn-donker-blauw-focus: #14536F;
+
+    --faq-tekst-grijs: #6b6b6b;
+    --faq-lijn-licht-grijs: #cfcfcf;
+
+    --scroll-balk-grijs: #d9d9d9;
+
+    --footer-achtergrond-grijs: #efefef;
+
+    /* Fonts */
+    --font-roboto: "Roboto";
+    --font-ciutadella: "CiutadellaRounded";
+    --font-trinity: "TrinityIconfont";
+
+
+    /* Header layout */
+    --balk-gradient-hoogte: 0.5rem;
+    --header-nav-hoogte: 5rem;
+    --header-totale-hoogte: calc(var(--balk-gradient-hoogte) + var(--header-nav-hoogte));
+
+    --animatie-nav-inklap: transform 250ms ease, visibility 0s linear 250ms;
+    --animatie-nav-uitklap: transform 250ms ease;
+}
+
+
+/* /////////////////////////// */
+/* ////////// Reset ////////// */
+/* /////////////////////////// */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+
+/* ////////////////////////// */
+/* /////// Typografie /////// */
+/* ////////////////////////// */
+h1, h2 {
+    color: var(--titel-blauw);
+    font-family: var(--font-ciutadella);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 1.625rem;
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 2rem;
+}
+
+p {
+    color: var(--tekst-grijs);
+    font-family: var(--font-roboto);
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.875rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* ////////////////////////// */
+/* ////// Screenreader ////// */
+/* ////////////////////////// */
+
+/* Skiplink bovenaan (skip naar content) */
+body>a:first-of-type {
+    position: absolute;
+    left: -9999px;
+
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+body>a:first-of-type:focus {
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: fit-content;
+    height: fit-content;
+    overflow: visible;
+
+    margin: 1.5rem 1rem;
+    padding: .6875rem 1.5rem;
+
+    border-radius: 4px;
+
+    color: var(--huisstijl-donker-paars);
+    font-family: var(--font-roboto);
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    background-color: var(--footer-achtergrond-grijs);
+}
+
+/* default is menu dicht en onzichtbaar */
+header nav ul:nth-of-type(2) {
+    /* display: none; */
+    visibility: hidden;
+}
+
+/* als nav class heeft dan menu open */
+header nav.toonMenu ul:nth-of-type(2) {
+    /* display: block; */
+    visibility: visible;
+}
+
+/* als focus uit menu verdwijnt, verwijder automatisch class van nav zodat hij sluit */
+header nav.toonMenu:not(:focus-within) ul:nth-of-type(2) {
+    /* display: none; */
+    visibility: hidden;
+}
+
+/* Focus styling */
+a[href] {
+    color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--lijn-donker-blauw-focus);
+}
+
+#home_Pagina main section:nth-of-type(2) ul li a:focus-visible,
+#stop_Pagina main section:nth-of-type(2) ul li a:focus-visible {
+    outline-offset: -3px;
+}
+
+#home_Pagina main section:nth-of-type(4) ul li a,
+#home_Pagina main section:nth-of-type(2) ul li a {
+    outline-offset: -3px;
+}
+
+#home_Pagina main section:nth-of-type(4) ul li:has(a:focus-visible) a img {
+    scale: 0.97;
+}
+
+footer section:nth-of-type(4) ul li:has(a:focus-visible) svg {
+    fill: var(--lijn-medium-grijs);
+}
+
+
+
+/* ////////////////////////// */
+/* ///////// Layout ///////// */
+/* ////////////////////////// */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+    overflow-x: hidden;
+    font-family: var(--font-roboto);
+}
+
+main>section:not(:first-of-type) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-inline: 1rem;
+}
+
+
+
+/* //////////////////////////// */
+/* //////// Header Nav //////// */
+/* //////////////////////////// */
+
+/* Gradient balk boven/onder website */
+header div,
+footer div {
+    height: var(--balk-gradient-hoogte);
+    background-image: linear-gradient(90deg,
+            var(--huisstijl-paars),
+            var(--huisstijl-oranje));
+}
+
+/* Nav visueel bovenaan */
+header nav {
+    order: -1;
+}
+
+/* Bovenste navigatiebalk */
+header nav>ul:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: var(--header-nav-hoogte);
+}
+
+/* Algemene horizontale spacing */
+header nav>ul:first-child,
+header nav>ul:last-child li {
+    margin-inline: 1rem;
+}
+
+header nav>ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul:nth-of-type(1) li:nth-of-type(1) a {
+    display: inline-flex;
+}
+
+/* Logo */
+header nav ul:nth-of-type(1) li:nth-of-type(1) a svg {
+    /* width: 5.56rem; */
+    height: 1.5rem;
+    fill: var(--titel-blauw);
+}
+
+
+
+/* /////////////////////////// */
+/* /////// Menu toggle /////// */
+/* /////////////////////////// */
+header nav ul:nth-of-type(1) li:nth-of-type(2) {
+    height: 1.5rem;
+}
+
+header nav>ul:nth-of-type(1) li:nth-of-type(2) button {
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    border: none;
+    background: none;
+
+    font-size: 1rem;
+}
+
+/* Label toggles */
+header nav>ul:nth-of-type(1) li:nth-of-type(2)>button>span:nth-of-type(2) {
+    display: none;
+}
+
+header nav.toonMenu>ul:nth-of-type(1) li:nth-of-type(2)>button>span:nth-of-type(1) {
+    display: none;
+}
+
+header nav.toonMenu>ul:nth-of-type(1) li:nth-of-type(2)>button>span:nth-of-type(2) {
+    display: block;
+}
+
+
+/* Icoon container (jouw <ul aria-hidden="true">) */
+header nav>ul:nth-of-type(1) li:nth-of-type(2) button>span:nth-of-type(3) {
+    width: 1rem;
+    height: 0.85rem;
+}
+
+header nav>ul:nth-of-type(1) li:nth-of-type(2) button span:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 0.25rem;
+}
+
+/* De 3 “bars” */
+header nav>ul:nth-of-type(1) li:nth-of-type(2) button span:nth-of-type(3) span {
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--tekst-grijs);
+    border-radius: 999px;
+
+    transform-origin: center;
+}
+
+/* Animatie op hamburger knop */
+header nav>ul:nth-of-type(1) li:nth-of-type(2) button span:nth-of-type(3) span {
+    transition: transform 200ms ease, opacity 200ms ease;
+}
+
+/* Menu open kruisje */
+header nav.toonMenu>ul:nth-of-type(1) li:nth-of-type(2) button span:nth-of-type(3) span:nth-of-type(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+header nav.toonMenu>ul:nth-of-type(1) li:nth-of-type(2) button span:nth-of-type(3) span:nth-of-type(2) {
+    opacity: 0;
+}
+
+header nav.toonMenu>ul:nth-of-type(1) li:nth-of-type(2) button span:nth-of-type(3) span:nth-of-type(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+
+/* /////////////////////////// */
+/* /////// Menu Inhoud /////// */
+/* /////////////////////////// */
+header nav ul:nth-of-type(2) {
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--achtergrond-wit);
+
+    /* Start buiten beeld */
+    transform: translateX(100%) translateY(var(--header-totale-hoogte));
+
+    visibility: hidden;
+    pointer-events: none;
+
+    /* transition: var(--animatie-nav-inklap); */
+    transition: transform 250ms ease, visibility 0s linear 250ms;
+    will-change: transform;
+}
+
+header nav ul:nth-of-type(2) li a svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Menu open */
+header nav.toonMenu ul:nth-of-type(2) {
+    transform: translateX(0) translateY(var(--header-totale-hoogte));
+
+    visibility: visible;
+    pointer-events: auto;
+
+    /* transition: var(--animatie-nav-uitklap); */
+    transition: transform 250ms ease;
+}
+
+
+
+/* ////////////////////////// */
+/* /////// Menu items /////// */
+/* ////////////////////////// */
+header nav ul:nth-of-type(2) li a {
+    display: flex;
+    align-items: center;
+
+    padding: 1rem 0;
+
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    color: var(--tekst-grijs);
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Items met chevron (v) */
+header nav ul:nth-of-type(2) li:nth-of-type(1) a,
+header nav ul:nth-of-type(2) li:nth-of-type(2) a,
+header nav ul:nth-of-type(2) li:nth-of-type(3) a {
+    justify-content: space-between;
+}
+
+/* Gescheiden lijst-items */
+header nav ul:nth-of-type(2) li:nth-of-type(5) a,
+header nav ul:nth-of-type(2) li:nth-of-type(6) a,
+header nav ul:nth-of-type(2) li:nth-of-type(7) a {
+    gap: 0.5rem;
+    border-top: 1px solid var(--lijn-grijs);
+}
+
+header nav ul:nth-of-type(2) li:nth-of-type(7) a {
+    border-bottom: 1px solid var(--lijn-grijs);
+}
+
+/* Zoek icoon positie fix */
+header nav ul:nth-of-type(2) li:nth-of-type(6) a svg path {
+    translate: 7px 7px;
+}
+
+
+
+/* /////////////////////////// */
+/* // Scroll lock open menu // */
+/* /////////////////////////// */
+body:has(nav.toonMenu) {
+    overflow: hidden;
+}
+
+
+
+/* //////////////////////////// */
+/* ////////// Footer ////////// */
+/* //////////////////////////// */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 5rem;
+    padding-top: 2.5rem;
+
+    background-color: var(--footer-achtergrond-grijs);
+    color: var(--tekst-grijs);
+
+    font-family: var(--font-roboto);
+}
+
+footer h2 {
+    color: var(--tekst-grijs);
+    font-family: var(--font-ciutadella);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+footer p, footer a {
+    font-family: var(--font-roboto);
+    font-weight: 300;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-inline: 1rem;
+}
+
+footer section:nth-of-type(1) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+footer section:nth-of-type(1) ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    font-family: var(--font-roboto);
+    font-weight: 300;
+}
+
+footer section:nth-of-type(1) ul li a::before {
+    content: "";
+
+    font-family: var(--font-trinity);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+footer section:nth-of-type(2) p,
+footer section:nth-of-type(3) p {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+}
+
+footer section:nth-of-type(2) a,
+footer section:nth-of-type(3) a {
+    display: flex;
+    align-items: center;
+
+    font-size: 1rem;
+    color: var(--link-blauw);
+    text-decoration: underline;
+}
+
+footer section:nth-of-type(2) a svg,
+footer section:nth-of-type(3) a svg {
+    fill: var(--link-blauw);
+    width: 1rem;
+    height: 1rem;
+}
+
+footer section:nth-of-type(4) ul {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+footer section:nth-of-type(4) ul li a {
+    display: inline-flex;
+    /* i.p.v. inline */
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--huisstijl-paars);
+    border-radius: 5rem;
+}
+
+footer section:nth-of-type(4) ul li a svg {
+    width: 40px;
+    height: 40px;
+
+    fill: var(--tekst-wit);
+}
+
+footer section:nth-of-type(4) ul li:nth-of-type(4) a svg path {
+    transform: translate(15px, 16px);
+}
+
+footer>img {
+    margin-inline: 1rem;
+}
+
+footer>img:nth-of-type(2) {
+    width: 123px;
+}
+
+footer>ul:last-of-type {
+    display: flex;
+    gap: 1rem;
+
+    margin-inline: 1rem;
+
+    font-size: 0.875rem;
+}
+
+
+
+/* ///////////////////////////// */
+/* /// Home Pagina Section 1 /// */
+/* ///////////////////////////// */
+#home_Pagina main section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    margin-inline: 0;
+
+    overflow: hidden;
+    background-color: var(--achtergrond-licht-blauw);
+}
+
+#home_Pagina main section:nth-of-type(1)>img {
+    z-index: 0;
+
+    height: 12.5rem;
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(1) {
+    z-index: 1;
+
+    margin-top: -2rem;
+    margin-inline: 1rem;
+    padding: 1rem;
+
+    border-radius: 0.25rem;
+    background-color: var(--achtergrond-wit);
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(1) li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(1) li p {
+    color: var(--tekst-grijs);
+    font-family: var(--font-roboto);
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.675rem;
+    letter-spacing: 0.04px;
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(1) li a {
+    width: fit-content;
+    padding: 0.6875rem 1.5rem;
+
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px hsla(0, 0%, 75%, 0.33),
+        0 1px 3px hsla(0, 0%, 75%, 0.33);
+    background-color: var(--huisstijl-paars);
+
+    color: var(--tekst-wit);
+    font-family: var(--font-roboto);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-inline: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(2) li a {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 0.75rem;
+    align-items: flex-start;
+
+    height: fit-content;
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(2) li a img {
+    display: block;
+
+    width: auto;
+    height: 5.5rem;
+
+    grid-row: 1 / span 2;
+
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+/* Toelichting */
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(2) li a p {
+    width: 88%;
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(2) li a p:nth-of-type(1) {
+    grid-column: 2;
+    grid-row: 1;
+
+    color: var(--tekst-grijs);
+    font-family: var(--font-ciutadella);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(2) li a p:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+
+    margin-top: 0.15rem;
+
+    color: var(--titel-blauw);
+    font-family: var(--font-ciutadella);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
+
+#home_Pagina main section:nth-of-type(1)>ul:nth-of-type(2) li a p:nth-of-type(2)::after {
+    display: inline-block;
+
+    margin-right: -1.5rem;
+    transform: translateX(0.125rem) translateY(0.0625rem);
+    vertical-align: bottom;
+
+    color: var(--huisstijl-paars);
+    font-family: var(--font-trinity);
+    font-size: 1rem;
+    font-weight: 500;
+    content: "";
+}
+
+
+
+/* ///////////////////////////// */
+/* /// Home Pagina Section 2 /// */
+/* ///////////////////////////// */
+#home_Pagina main section:nth-of-type(2) {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    /* margin-top: -1rem; */
+    margin-inline: 0;
+}
+
+#home_Pagina main section:nth-of-type(2) h2 {
+    margin-inline: 1rem;
+}
+
+/* Carrousel container */
+#home_Pagina main section:nth-of-type(2) ul {
+    display: flex;
+    gap: 1rem;
+
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    /* scrollbar verbergen */
+    scrollbar-width: none;
+
+    /* markers activeren */
+    scroll-marker-group: after;
+}
+
+/* Carrousel custom scroll balk gebasseerd op markers */
+#home_Pagina main section:nth-of-type(2) ul::scroll-marker-group {
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+
+    width: 15rem;
+    height: 2px;
+
+    margin-top: 0.5rem;
+    margin-inline: auto;
+
+    border-radius: 999px;
+    background: #d9d9d9;
+}
+
+/* Carrousel inhoud */
+#home_Pagina main section:nth-of-type(2) ul li {
+    flex: 0 0 auto;
+
+    width: 8.875rem;
+    height: 8.25rem;
+
+    scroll-snap-align: start;
+    scroll-margin: 1rem;
+
+    border: 1px solid var(--lijn-grijs);
+    border-radius: 4px;
+}
+
+/* Carrousel custom scroll balk marker per item */
+#home_Pagina main section:nth-of-type(2) ul li::scroll-marker {
+    content: "";
+
+    flex: 1 1 0;
+    height: 100%;
+
+    background: #d9d9d9;
+    transition: background-color 0.2s;
+}
+
+/* Carrousel custom scroll balk actieve marker per item */
+#home_Pagina main section:nth-of-type(2) ul li::scroll-marker:target-current {
+    background: var(--titel-blauw);
+}
+
+/* Carrousel custom scroll balk weghalen van 1 marker */
+#home_Pagina main section:nth-of-type(2) ul li:nth-of-type(5)::scroll-marker {
+    display: none;
+}
+
+/* Carrousel extra scrollruimte links/rechts */
+#home_Pagina main section:nth-of-type(2) ul li:first-of-type {
+    margin-left: 1rem;
+}
+
+#home_Pagina main section:nth-of-type(2) ul li:last-of-type {
+    margin-right: 1rem;
+}
+
+/* Carrousel item inhoud */
+#home_Pagina main section:nth-of-type(2) ul li a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+
+    height: 100%;
+    gap: 0.5em;
+    padding: 20px 16px 15px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    color: var(--tekst-grijs);
+    font-family: var(--font-ciutadella);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+#home_Pagina main section:nth-of-type(2) ul li a img {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+
+/* ///////////////////////////// */
+/* /// Home Pagina Section 3 /// */
+/* ///////////////////////////// */
+#home_Pagina main section:nth-of-type(3) {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#home_Pagina main section:nth-of-type(3) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#home_Pagina main section:nth-of-type(3) ul li a {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    height: 62px;
+    padding: 0 24px;
+
+    border: 1px solid var(--lijn-grijs);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 75%, 0.33), 0 1px 3px 0 hsla(0, 0%, 75%, 0.33);
+
+    font-family: var(--font-ciutadella);
+    font-size: 1.0625rem;
+    font-weight: 600;
+}
+
+#home_Pagina main section:nth-of-type(3) ul li a svg {
+    width: 1.5rem;
+    transform: translateX(1rem);
+}
+
+#home_Pagina main section:nth-of-type(3) ul li a svg path {
+    fill: var(--huisstijl-paars);
+}
+
+
+
+/* ///////////////////////////// */
+/* /// Home Pagina Section 4 /// */
+/* ///////////////////////////// */
+#home_Pagina main section:nth-of-type(4) {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    margin-inline: 0;
+}
+
+#home_Pagina main section:nth-of-type(4) h2 {
+    margin-inline: 1rem;
+}
+
+#home_Pagina main section:nth-of-type(4) ul {
+    display: flex;
+    gap: 1rem;
+
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    scroll-marker-group: after;
+}
+
+#home_Pagina main section:nth-of-type(4) ul::scroll-marker-group {
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+
+    width: 15rem;
+    height: 2px;
+
+    /* balk centreren onder de carrousel */
+    margin: auto;
+
+    /* gap tussen carrousel en balk */
+    margin-top: 0.5rem;
+
+    border-radius: 999px;
+    background: var(--scroll-balk-grijs);
+}
+
+#home_Pagina main section:nth-of-type(4) ul li {
+    flex-shrink: 0;
+    flex: 0 0 auto;
+
+    width: 13.625rem;
+    height: 20.25rem;
+
+    scroll-snap-align: start;
+    scroll-margin: 1rem;
+
+    box-sizing: border-box;
+
+    border: 1px solid var(--lijn-grijs);
+    border-radius: 4px;
+    /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 75%, 0.33), 0 1px 3px 0 hsla(0, 0%, 75%, 0.33); */
+}
+
+#home_Pagina main section:nth-of-type(4) ul li::scroll-marker {
+    content: '';
+
+    flex: 1 1 0;
+    /* verdeelt 15rem over aantal items */
+    height: 100%;
+
+    background: var(--scroll-balk-grijs);
+    transition: background-color .2s;
+}
+
+/* Actieve marker */
+#home_Pagina main section:nth-of-type(4) ul li::scroll-marker:target-current {
+    background: var(--titel-blauw);
+}
+
+#home_Pagina main section:nth-of-type(4) ul li:first-of-type {
+    margin-left: 1rem;
+}
+
+#home_Pagina main section:nth-of-type(4) ul li:last-of-type {
+    margin-right: 1rem;
+}
+
+#home_Pagina main section:nth-of-type(4) ul li a {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    color: var(--tekst-grijs);
+    font-family: var(--font-ciutadella);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+#home_Pagina main section:nth-of-type(4) ul li a img {
+    position: relative;
+    z-index: 1;
+
+    width: 13.625rem;
+    height: 10rem;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+}
+
+#home_Pagina main section:nth-of-type(4) ul li a span {
+    flex: 1;
+
+    padding: 1.25rem 20px 1.5rem 1.5rem;
+    box-sizing: border-box;
+
+    border-top: 0.25rem solid var(--huisstijl-oranje);
+}
+
+#home_Pagina main section:nth-of-type(4) ul li a svg {
+    align-self: flex-end;
+    /* naar het einde van de flex-container */
+
+    width: 1.5rem;
+    margin: 0 1rem 1.5rem 0;
+}
+
+#home_Pagina main section:nth-of-type(4) ul li a svg path {
+    fill: var(--huisstijl-paars);
+}
+
+
+
+/* ///////////////////////////// */
+/* /// Home Pagina Section 5 /// */
+/* ///////////////////////////// */
+#home_Pagina main section:nth-of-type(5) ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    height: 3rem;
+    padding-inline: 0.75rem;
+
+    border-bottom: 1px solid var(--lijn-medium-grijs);
+
+    color: var(--tekst-grijs);
+    font-family: var(--font-ciutadella);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+#home_Pagina main section:nth-of-type(5) ul li a svg {
+    width: 1.25rem;
+}
+
+#home_Pagina main section:nth-of-type(5) ul li a svg path {
+    fill: var(--huisstijl-paars);
+}
+
+
+
+/* ///////////////////////////// */
+/* ////// Article Styling ////// */
+/* /// Home Pagina Section 6 /// */
+/* /// Stop Pagina Section 4 /// */
+/* ///////////////////////////// */
+#home_Pagina main section:nth-of-type(6) h2,
+#stop_Pagina main section:nth-of-type(4) h2 {
+    display: none;
+}
+
+#home_Pagina main section:nth-of-type(6),
+#stop_Pagina main section:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#home_Pagina main section:nth-of-type(6) article,
+#stop_Pagina main section:nth-of-type(4) article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    font-family: var(--font-roboto);
+    font-weight: 300;
+
+    padding-bottom: 0.5rem;
+    /* display: none; */
+}
+
+#home_Pagina main section:nth-of-type(6) article::before,
+#stop_Pagina main section:nth-of-type(4) article::before {
+    content: "";
+    display: inline-block;
+
+    width: 50px;
+    height: 3px;
+
+    background: var(--huisstijl-oranje);
+}
+
+#home_Pagina main section:nth-of-type(6) article h3,
+#stop_Pagina main section:nth-of-type(4) article h3 {
+    color: var(--tekst-grijs);
+    font-family: var(--font-ciutadella);
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+#home_Pagina main section:nth-of-type(6) article ul,
+#stop_Pagina main section:nth-of-type(4) article ul {
+    display: flex;
+    gap: 0.4rem;
+}
+
+#home_Pagina main section:nth-of-type(6) article ul li time,
+#stop_Pagina main section:nth-of-type(4) article ul li time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+
+    color: var(--tekst-grijs);
+    font-family: var(--font-roboto);
+    font-size: .75rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+#home_Pagina main section:nth-of-type(6) article ul li time svg,
+#stop_Pagina main section:nth-of-type(4) article ul li time svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+#home_Pagina main section:nth-of-type(6) article img,
+#stop_Pagina main section:nth-of-type(4) article img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#home_Pagina main section:nth-of-type(6) article p,
+#stop_Pagina main section:nth-of-type(4) article p {
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.625rem;
+}
+
+#home_Pagina main section:nth-of-type(6) article a,
+#stop_Pagina main section:nth-of-type(4) article a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: var(--link-blauw);
+    text-decoration: underline;
+}
+
+#home_Pagina main section:nth-of-type(6) article a svg,
+#stop_Pagina main section:nth-of-type(4) article a svg {
+    fill: var(--link-blauw);
+    width: 1rem;
+    height: 1rem;
+}
+
+
+
+
+
+/* //////////////////////////// */
+/* //////////////////////////// */
+/* ////// Stoppen Pagina ////// */
+/* //////////////////////////// */
+/* //////////////////////////// */
+
+
+/* ///////////////////////////// */
+/* /// Stop Pagina Section 1 /// */
+/* ///////////////////////////// */
+#stop_Pagina main section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-inline: 1rem;
+
+    background-color: var(--achtergrond-licht-blauw);
+}
+
+#stop_Pagina main section:first-of-type h1 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+#stop_Pagina main section:first-of-type img {
+    position: relative;
+    bottom: -1rem;
+
+    margin-top: -2rem;
+}
+
+
+
+/* ///////////////////////////// */
+/* /// Stop Pagina Section 2 /// */
+/* ///////////////////////////// */
+#stop_Pagina main section:nth-of-type(2) {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    margin-top: -1rem;
+    margin-inline: 0;
+}
+
+#stop_Pagina main section:nth-of-type(2) h2 {
+    margin-inline: 1rem;
+}
+
+#stop_Pagina main section:nth-of-type(2) ul {
+    display: flex;
+    gap: 1rem;
+
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    /* scrollbar verbergen (optioneel) */
+    scrollbar-width: none;
+
+    /* markers aanzetten */
+    scroll-marker-group: after;
+}
+
+#stop_Pagina main section:nth-of-type(2) ul::scroll-marker-group {
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+
+    width: 15rem;
+    height: 2px;
+
+    /* gap tussen carrousel en balk */
+    margin: auto;
+    margin-top: 0.5rem;
+
+    border-radius: 999px;
+    background: var(--scroll-balk-grijs);
+}
+
+
+#stop_Pagina main section:nth-of-type(2) ul li {
+    flex: 0 0 auto;
+
+    width: 8.875rem;
+    height: 8.25rem;
+
+    scroll-snap-align: start;
+    scroll-margin: 1rem;
+
+    border: 1px solid var(--lijn-grijs);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 75%, 0.33), 0 1px 3px 0 hsla(0, 0%, 75%, 0.33);
+}
+
+#stop_Pagina main section:nth-of-type(2) ul li::scroll-marker {
+    content: "";
+
+    flex: 1 1 0;
+    height: 100%;
+
+    background: var(--scroll-balk-grijs);
+    transition: background-color .2s;
+}
+
+/* Actieve segment */
+#stop_Pagina main section:nth-of-type(2) ul li::scroll-marker:target-current {
+    background: var(--titel-blauw);
+}
+
+#stop_Pagina main section:nth-of-type(2) ul li:nth-of-type(5)::scroll-marker {
+    display: none;
+}
+
+#stop_Pagina main section:nth-of-type(2) ul li:first-of-type {
+    margin-left: 1rem;
+}
+
+#stop_Pagina main section:nth-of-type(2) ul li:last-of-type {
+    margin-right: 1rem;
+}
+
+#stop_Pagina main section:nth-of-type(2) ul li a {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 kolom */
+    grid-template-rows: auto 1fr;
+    /* rij 1 = auto, rij 2 = rest */
+    justify-items: center;
+    align-items: center;
+
+    height: 100%;
+    gap: 0.5em;
+    padding: 1.25rem 1rem 0.9375rem;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    color: var(--tekst-grijs);
+    font-family: var(--font-ciutadella);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+#stop_Pagina main section:nth-of-type(2) ul li a img {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+
+/* ///////////////////////////// */
+/* /// Stop Pagina Section 3 /// */
+/* ///////////////////////////// */
+#stop_Pagina main section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#stop_Pagina main section:nth-of-type(3) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+}
+
+#stop_Pagina main section:nth-of-type(3) ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#stop_Pagina main section:nth-of-type(3) ul li img {
+    width: 5.5rem;
+}
+
+#stop_Pagina main section:nth-of-type(3) ul li a {
+    width: fit-content;
+    padding: .6875rem 1.5rem;
+
+    border: 1px solid var(--huisstijl-paars);
+    border-radius: 4px;
+
+    color: var(--huisstijl-paars);
+    font-family: var(--font-roboto);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+
+
+/* ///////////////////////////// */
+/* /// Stop Pagina Section 5 /// */
+/* ///////////////////////////// */
+#stop_Pagina main section:nth-of-type(5)>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Detail/faq uitklap kaart */
+#stop_Pagina main section:nth-of-type(5) details {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+
+    border: 1px solid var(--faq-lijn-licht-grijs);
+    border-radius: .25rem;
+    background-color: var(--achtergrond-wit);
+    overflow: clip;
+    /* houdt border-radius netjes */
+}
+
+#stop_Pagina main section:nth-of-type(5) details a {
+    color: var(--link-blauw);
+    text-decoration: underline;
+}
+
+/* Alleen gap toevoegen tussen summary en antwoord wanneer detail kaart uitgeklapt is (de gap is namelijk anders ook zichtbaar als hij ingeklapt is) */
+#stop_Pagina main section:nth-of-type(5) details[open] {
+    gap: 1.25rem;
+    border: 1px solid var(--lijn-donker-grijs);
+}
+
+#stop_Pagina main section:nth-of-type(5) details[open] summary {
+    color: var(--titel-blauw);
+}
+
+/* Summary (klikbare vraag) */
+#stop_Pagina main section:nth-of-type(5) details summary {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+
+    list-style: none;
+
+    color: var(--tekst-grijs);
+    font-family: var(--font-ciutadella);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+#stop_Pagina main section:nth-of-type(5) details summary svg {
+    place-self: start end;
+    transform-origin: center;
+    transition: transform 200ms ease;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Chevron (v) omhoog bij open */
+#stop_Pagina main section:nth-of-type(5) details[open] summary svg {
+    transform: rotate(180deg);
+}
+
+/* Inhoud */
+#stop_Pagina main section:nth-of-type(5) details>p {
+    max-width: 16.875rem;
+
+    color: var(--tekst-grijs);
+    font-family: var(--font-roboto);
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.875rem;
+    letter-spacing: .04px;
+
+    margin: 0;
+}
+
+/* Placeholder tekst onder FAQ */
+#stop_Pagina main section:nth-of-type(5)>p {
+    margin-top: 1.5rem;
+    color: var(--faq-tekst-grijs);
+}
+
+
+
+/* ///////////////////////////// */
+/* /// Stop Pagina Section 6 /// */
+/* ///////////////////////////// */
+#stop_Pagina main section:nth-of-type(6) ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    height: 3rem;
+    padding-inline: 0.75rem;
+
+    border-bottom: 1px solid var(--lijn-medium-grijs);
+
+    color: var(--tekst-grijs);
+    font-family: var(--font-ciutadella);
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+#stop_Pagina main section:nth-of-type(6) ul li a svg {
+    width: 1.25rem;
+}
+
+#stop_Pagina main section:nth-of-type(6) ul li a svg path {
+    fill: var(--huisstijl-paars);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    header nav ul:nth-of-type(2) {
+        transition: none;
+    }
+
+    header nav.toonMenu ul:nth-of-type(2) {
+        transition: none;
+    }
+
+    header nav>ul:nth-of-type(1) li:nth-of-type(2) button ul li span {
+        transition: none;
+    }
+
+    #stop_Pagina main section:nth-of-type(5) details {
+        transition: none;
+    }
+
+
+}
