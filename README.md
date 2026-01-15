@@ -125,26 +125,23 @@ Maarrrrr ik vind dat de KvK het best netjes doet in verhouding tot sommige websi
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Dit voortgang gesprek met de studentbegeleider was een stuk leuker. Ik heb gelukkig snel een vliegende start met de KvK website kunnen maken.
+  Deze week ging het een stuk beter dan de voorgaande weken. Nadat ik te horen kreeg dat mijn eerste website (Wild and the Moon) niet voldeed, heb ik snel kunnen wisselen naar een nieuw onderwerp, namelijk de website van de Kamer van Koophandel. Door deze snelle wissel heb ik gelukkig minimale vertraging opgelopen en kon ik direct weer verder.
+
+Afgelopen week heb ik gelukkig kunnen oefenen met de website van Wild and the Moon. Ookal ga ik hier dus niet mee verder, was het toch even fijn om alles weer eens door te nemen en uit te proberen. Hierdoor zijn veel van de eerdere struikelpunten wat duidelijker geworden en heb ik hier al oplossingen voor gevonden en ben ik steeds meer in de codeer flow geraakt. Dit zorgde ervoor dat ik een vliegende start kon maken met het opzetten van de HTML-structuur van de KvK-website.
+
+Tijdens het uitwerken van de pagina’s kwam ik een HTML-element tegen dat ik nog niet eerder bewust had gebruikt, namelijk het ARTICLE element. Ik wist niet precies wat de semantische betekenis hiervan was en welke regels hierbij horen. Dit heb ik daarom besproken tijdens mijn gesprek met de studentenbegeleider. Dit gaf weer meer duidelijkheid over wanneer en hoe je ARTICLE correct toepast en zette mij weer op het juiste spoor.
+
+Daarnaast heb ik deze week veel nagedacht over het gebruik van het A element. Ik twijfelde over wat er nu wel en wat niet in een link mag zitten/onderdeel is van het "klikbare" gedeelte. Er zijn verschillende meniningen over hoe je dit semantisch en officieel moet doen. Zo waren Danny en de begeleider het niet met elkaar eens over wat de juiste/beste manier was om een bepaald onderdeel van de kvk website na te maken. De website van de kvk bevat veel klikbare blokken die visueel als een geheel/blok/knop zijn vormgegeven. Voor mij was het in ieder geval erg onduidelijk wat de beste aanpak zou zijn en het meest geschikt zou zijn voor het gewenste gedrag en de ervaring op de website. Vorm, Functie en toegankelijkheid kunnen snel met elkaar botsen.
+
+Tot slot liep ik al langere tijd vast op de carrousels die op de KvK-website worden gebruikt. Ik heb hier een soort haat-liefde relatie mee. Vaak ziet het er misschien simpel uit maar nog vaker onderschat ik dit en loop ik al snel vast. Ik heb tijdens mijn gesprek daarom lekker veel vragen kunnen stellen en in de klas verder kunnen werken en direct weer feedback kunnen krijgen van de begeleider.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
 
 </details>
 
