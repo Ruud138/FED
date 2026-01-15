@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home  
-  <img src="readme-images/Screenshot-klein-home.jpg" width="375px" alt="Screenshot van de home pagina">
+  <img src="readme-images/screenshot_kvk_home_small.png" width="375px" alt="Screenshot van de home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Menu  
-  <img src="readme-images/Screenshot-klein-menu.jpg" width="375px" alt="Screenshot van de menu pagina">
+  <img src="readme-images/screenshot_kvk_stoppen_small.png" width="375px" alt="Screenshot van de menu pagina">
  
 </details>
 
@@ -56,10 +56,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Tijdens mijn screenreader test merkte ik dat veel headings incorrect zijn. Zo staan er op de homepagina 3 verschillende H1 headings, wordt H3 heading helemaal niet gebruikt, hebben sommige headings de verkeerde H[nummer] en zijn sommige elementen een heading die geen heading moeten zijn.
-  
-  Het testen van de links ging beter. Deze zijn grotendeels correct en duidelijk ingesteld. De header/navigatie werkt goed en is duidelijk. Onderaan de homepagina staan een aantal Instagram posts van het WildAndTheMoon Instagram account gelinkt. Ieder van deze foto links die hier staan hebben een alt gekregen die door de screenreader voorgelezen wordt. Deze alts zijn de originele tekst die bij de Instagram post in de bio staat maar deze zijn niet duidelijk en leggen niet uit wat er op de foto staat. Wanneer de screenreader deze teksten begint voor te lezen is er geen touw meer aan vast te knopen en heb je als gebruiker geen idee waar je naar "kijkt"/navigeert.
+  Tijdens mijn screenreader test merkte ik dat de KvK het best goed aanpakt als het neerkomt op semantisch coderen, beter dan veel andere websites. Het viel me wel op dat de KvK website wel heel veel headings heeft. Een aantal onderdelen van de website zijn niets anders dan een hele berg headings achter elkaar waardoor je er niet heel soepel doorheen komt. Het viel mij in element inspecteren ook op dat de KvK website bijna alle HTML content dubbel op de website heeft staan maar 1 versie is zichtbaar en 1 versie is display none. Dit zorgt wel voor een nog groter aantal headings en ook dubbele headings zoals <h1> die je normaal maar 1 keer mag gebruiken.
+  Gelukkig heeft de KvK wel alle dubbele onderdelen goed verborgen waardoor de screenreader deze niet zomaar dubbel voor zal lezen.
 
+  Hierna heb ik ook de lijst navigatie getest maar de KvK website heeft slechts 2 lists waarvan 1 de navigatie in de header  is en de andere is de navigatie in de footer. Verder maakt de KvK alleen maar gebruik van headings en heel veel <div>.
+
+  Verder ontbreekt ook op vijwel alle foto's een alt, zitten elementen genest in andere waarbij dat niet mag (zoals <ul> in <button> en ontbreken veel belangrijke HTML elementen die simpelweg als <div> toegevoegd zijn.
+
+Maarrrrr ik vind dat de KvK het best netjes doet in verhouding tot sommige websites waar het een grote puinzooi is.
 </details>
 
 
