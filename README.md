@@ -230,8 +230,10 @@ Tot slot liep ik al langere tijd vast op de carrousels die op de KvK-website wor
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event (
+  2. https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event
+  3. https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events
+  4. https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
+  5. https://developer.mozilla.org/en-US/docs/Web/API/FocusEvent/relatedTarget
 
 </details>
