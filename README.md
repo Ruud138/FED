@@ -56,12 +56,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Tijdens mijn screenreader test merkte ik dat de KvK het best goed aanpakt als het neerkomt op semantisch coderen, beter dan veel andere websites. Het viel me wel op dat de KvK website wel heel veel headings heeft. Een aantal onderdelen van de website zijn niets anders dan een hele berg headings achter elkaar waardoor je er niet heel soepel doorheen komt. Het viel mij in element inspecteren ook op dat de KvK website bijna alle HTML content dubbel op de website heeft staan maar 1 versie is zichtbaar en 1 versie is display none. Dit zorgt wel voor een nog groter aantal headings en ook dubbele headings zoals "<h1>" die je normaal maar 1 keer mag gebruiken.
+  Tijdens mijn screenreader test merkte ik dat de KvK het best goed aanpakt als het neerkomt op semantisch coderen, beter dan veel andere websites. Het viel me wel op dat de KvK website wel heel veel headings heeft. Een aantal onderdelen van de website zijn niets anders dan een hele berg headings achter elkaar waardoor je er niet heel soepel doorheen komt. Het viel mij in element inspecteren ook op dat de KvK website bijna alle HTML content dubbel op de website heeft staan maar 1 versie is zichtbaar en 1 versie is display none. Dit zorgt wel voor een nog groter aantal headings en ook dubbele headings zoals H1 die je normaal maar 1 keer mag gebruiken.
   Gelukkig heeft de KvK wel alle dubbele onderdelen goed verborgen waardoor de screenreader deze niet zomaar dubbel voor zal lezen.
 
-  Hierna heb ik ook de lijst navigatie getest maar de KvK website heeft slechts 2 lists waarvan 1 de navigatie in de header  is en de andere is de navigatie in de footer. Verder maakt de KvK alleen maar gebruik van headings en heel veel <div>.
+  Hierna heb ik ook de lijst navigatie getest maar de KvK website heeft slechts 2 lists waarvan 1 de navigatie in de header  is en de andere is de navigatie in de footer. Verder maakt de KvK alleen maar gebruik van headings en heel veel DIV.
 
-  Verder ontbreekt ook op vijwel alle foto's een alt, zitten elementen genest in andere waarbij dat niet mag (zoals <ul> in <button> en ontbreken veel belangrijke HTML elementen die simpelweg als <div> toegevoegd zijn.
+  Verder ontbreekt ook op vijwel alle foto's een alt, zitten elementen genest in andere waarbij dat niet mag (zoals UL in BUTTON en ontbreken veel belangrijke HTML elementen die simpelweg als DIV toegevoegd zijn.
 
 Maarrrrr ik vind dat de KvK het best netjes doet in verhouding tot sommige websites waar het een grote puinzooi is.
 </details>
@@ -99,26 +99,19 @@ Maarrrrr ik vind dat de KvK het best netjes doet in verhouding tot sommige websi
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Aan het begin van mijn herkansing liep het allemaal best stroef. Ik heb meerdere keren van website gewisseld.
+  Het viel me ook goed tegen om weer in de "codeer sfeer" te komen. Ondertussen is het al een lange tijd geleden dat ik gecodeerd heb dus het was deze week vooral veel dingen opnieuw uitproberen en terugkijken in mijn oude projecten naar hoe ik bepaalde problemen toen aangepakt had.
+
+  Deze week dacht ik lekker op weg te zijn en had ik de gehele HTML van mijn website al opgesteld. Deze website bleek alleen helaas toch niet helemaal te voldoen dus dit werk was voor niets geweest. Ik hoop volgende week een stuk meer gedaan te kunnen hebben.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  
 
 </details>
 
@@ -132,7 +125,7 @@ Maarrrrr ik vind dat de KvK het best netjes doet in verhouding tot sommige websi
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Dit voortgang gesprek met de studentbegeleider was een stuk leuker. Ik heb gelukkig snel een vliegende start met de KvK website kunnen maken.
 
 
   ### Agenda voor meeting
