@@ -193,19 +193,21 @@ De grootste taak die nu nog voor mij ligt is het correct en volledig bedienbaar 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/screenshot_eigen_website.png" width="375px" alt="Mijn website">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb verschillende dingen geleerd. Het opzetten van de HTML ging super goed op een paar struikelpunten zoals wat er wel/niet binnen een a element valt na.
+  Verder heb ik geleerd hoe ik een website beter leesbaar maak voor een screenreader door zowel de juist html termen te gebruiken om de code duidelijk te maken als het toevoegen van de juist attributen zoals aria labels. Dit is een van de eerste keren dat mijn website gewoon goed bedienbaar is met mijn toetsenbord.
+  Ik heb geleerd gebruik te maken van :marker om een slider voor een carrousel te maken.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Het correct behandelen van ingewikkelde interacties zoals focus bij het openen en sluiten van het hamburger menu vond ik lastig. Het was moeilijk om de screenreader goed met het menu overweg te laten gaan.
+  Hetzelfde gold voor de detail kaarten in het faq menu op de stoppen pagina. Het was erg lastig om dezelfde werking als op nde kvk website na te maken maar volgensmij is het mij redelijk goed gelukt met de events van focusin en focusout.
+  
 </details>
 
 
