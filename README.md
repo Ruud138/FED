@@ -199,16 +199,23 @@ De grootste taak die nu nog voor mij ligt is het correct en volledig bedienbaar 
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Ik heb verschillende dingen geleerd. Het opzetten van de HTML ging super goed op een paar struikelpunten zoals wat er wel/niet binnen een a element valt na.
-  Verder heb ik geleerd hoe ik een website beter leesbaar maak voor een screenreader door zowel de juist html termen te gebruiken om de code duidelijk te maken als het toevoegen van de juist attributen zoals aria labels. Dit is een van de eerste keren dat mijn website gewoon goed bedienbaar is met mijn toetsenbord.
-  Ik heb geleerd gebruik te maken van :marker om een slider voor een carrousel te maken.
+  Ik heb verschillende dingen geleerd. Het opzetten van de HTML ging super goed op een paar struikelpunten zoals wat er wel/niet binnen een a element valt na. Ik heb een aantal keer flink zitten te twijfel of ik nu wel of niet alle elementen in het a element moest opnemen. Dus niet aleen de klikbare tekst maar misschien ook de afbeelding, icoon, etc.
+  Verder heb ik geleerd hoe ik een website beter leesbaar maak voor een screenreader door zowel de juist html termen te gebruiken om de code duidelijk en beter leesbaar te maken (voor zowel robot als mens) als het toevoegen van de juist attributen zoals aria labels. Dit is een van de eerste keren dat mijn website gewoon goed bedienbaar is met mijn toetsenbord.
+  Ik heb geleerd gebruik te maken van :marker om een slider voor een carrousel te maken. In 1e instantie wilde ik dit met javascript en een div en span stylen doen maar dit zag er erg omslachtig uit. Daarnaast voldeed het niet aan de regels in de opdracht "geen javascript voor css gebruiken". Uiteindelijk bleek ik met marker heel veel mogelijkheden te hebben en is het me gelukt een slider na te maken voor de carrousels. Ik ben hier erg strots op.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/screenshot_custom_carrousel_slider" width="375px" alt="screenshot van carrousel slider gemaakt met marker elementen">
+  <img src="readme-images/screenshot_css_marker.png" width="375px" alt="screenshot van CSS marker styling">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Het correct behandelen van ingewikkelde interacties zoals focus bij het openen en sluiten van het hamburger menu vond ik lastig. Het was moeilijk om de screenreader goed met het menu overweg te laten gaan.
+  Het correct behandelen van ingewikkelde interacties zoals focus bij het openen en sluiten van het hamburger menu vond ik lastig. Het was moeilijk om de screenreader goed met het menu overweg te laten gaan. en het menu bijvoorbeeld automatisch te sluiten als de screenreader het menu verlaat.
   Hetzelfde gold voor de detail kaarten in het faq menu op de stoppen pagina. Het was erg lastig om dezelfde werking als op nde kvk website na te maken maar volgensmij is het mij redelijk goed gelukt met de events van focusin en focusout.
+  Het was moeilijk om het gedrag van de screenreader binnen deze secties op de website goed af te stellen. Veel kon gedaan worden met het focus attribuut maar ook niet alles. Ik ontdekte dat detailkaarten open en dicht geforceerd kunnen worden met het "open" attribuut dat toegevoegd of weggehaald kan worden met JS
+
+  <img src="readme-images/screenshot_css_detail_kaart.png" width="375px" alt="screenshot van js om detail kaart open/dicht te forceren">
+    <img src="readme-images/screenshot_css_detail_kaart_screenreader.png" width="375px" alt="screenshot van js om detail kaart open/dicht te forceren">
+
+
   
 </details>
 
