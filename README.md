@@ -161,6 +161,7 @@ Tot slot liep ik al langere tijd vast op de carrousels die op de KvK-website wor
 In deze week heb ik het correct toepassen van de <a>-elementen afgerond. Na veel twijfel en het maken van de afweging heb ik ervoor gekozen om niet alleen de tekst maar het volledige blok (bestaande uit tekst, afbeelding en padding) klikbaar te maken. Op de website van de Kamer van Koophandel zijn deze onderdelen namelijk duidelijk vormgegeven als losse blokken. Voor de gebruiker voelen deze aan als een soort knop waardoor je ook verwacht dat het gehele element klikbaar is. Vanuit dat perspectief vond ik dit de meest logische en gebruiksvriendelijke keuze.
 
 <img src="readme-images/voorbeeld_a_element_kvk_website.png" alt="breakdown van de hele home pagina">
+<img src="readme-images/voorbeeld_marker_kvk_website.png" alt="breakdown van de hele home pagina">
 
 
 Daarnaast heb ik deze week de carrousels succesvol kunnen afronden. In eerste instantie had ik de slider van de carrousel opgebouwd met een div voor de balk en een span voor de slider/thumb. Omdat CSS geen volledige controle biedt over het stylen van een scrollbalk, ging ik er vanuit dat JavaScript noodzakelijk was om de positie van de gebruiker in de carrousel te meten en de slider hierop te laten reageren. Dit is ook de manier waarop de KvK-website dit oplost.
