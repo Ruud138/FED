@@ -74,18 +74,16 @@ Maarrrrr ik vind dat de KvK het best netjes doet in verhouding tot sommige websi
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele home pagina: 
-  <img src="readme-images/Home-scherm-breakdown.png" width="375px" alt="breakdown van de hele home pagina">
+  <img src="readme-images/KVK Home scherm breakdown.png" width="375px" alt="breakdown van de hele home pagina">
 
   ### dynamisch deel home pagina: 
-  <img src="readme-images/Home-scherm-content.png" width="375px" alt="breakdown van een dynamisch deel op de home pagina">
+  <img src="readme-images/KVK Home scherm content.png" width="375px" alt="breakdown van een dynamisch deel op de home pagina">
 
 
 
   ### de hele menu pagina: 
-  <img src="readme-images/Menu-scherm-breakdown.png" width="375px" alt="breakdown van de hele menu pagina">
+  <img src="readme-images/KVK Stoppen scherm content.png" width="375px" alt="breakdown van de stoppen pagina">
 
-  ### dynamisch deel menu pagina (hamburger menu): 
-  <img src="readme-images/Menu-scherm-content.png" width="375px" alt="breakdown van een dynamisch deel op de menu pagina">
 
 </details>
 
