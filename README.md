@@ -203,7 +203,7 @@ De grootste taak die nu nog voor mij ligt is het correct en volledig bedienbaar 
   Verder heb ik geleerd hoe ik een website beter leesbaar maak voor een screenreader door zowel de juist html termen te gebruiken om de code duidelijk en beter leesbaar te maken (voor zowel robot als mens) als het toevoegen van de juist attributen zoals aria labels. Dit is een van de eerste keren dat mijn website gewoon goed bedienbaar is met mijn toetsenbord.
   Ik heb geleerd gebruik te maken van :marker om een slider voor een carrousel te maken. In 1e instantie wilde ik dit met javascript en een div en span stylen doen maar dit zag er erg omslachtig uit. Daarnaast voldeed het niet aan de regels in de opdracht "geen javascript voor css gebruiken". Uiteindelijk bleek ik met marker heel veel mogelijkheden te hebben en is het me gelukt een slider na te maken voor de carrousels. Ik ben hier erg strots op.
 
-  <img src="readme-images/screenshot_custom_carrousel_slider" width="375px" alt="screenshot van carrousel slider gemaakt met marker elementen">
+  <img src="readme-images/screenshot_custom_carrousel_slider.png" width="375px" alt="screenshot van carrousel slider gemaakt met marker elementen">
   <img src="readme-images/screenshot_css_marker.png" width="375px" alt="screenshot van CSS marker styling">
 
 
@@ -212,8 +212,8 @@ De grootste taak die nu nog voor mij ligt is het correct en volledig bedienbaar 
   Hetzelfde gold voor de detail kaarten in het faq menu op de stoppen pagina. Het was erg lastig om dezelfde werking als op nde kvk website na te maken maar volgensmij is het mij redelijk goed gelukt met de events van focusin en focusout.
   Het was moeilijk om het gedrag van de screenreader binnen deze secties op de website goed af te stellen. Veel kon gedaan worden met het focus attribuut maar ook niet alles. Ik ontdekte dat detailkaarten open en dicht geforceerd kunnen worden met het "open" attribuut dat toegevoegd of weggehaald kan worden met JS
 
-  <img src="readme-images/screenshot_css_detail_kaart.png" width="375px" alt="screenshot van js om detail kaart open/dicht te forceren">
-    <img src="readme-images/screenshot_css_detail_kaart_screenreader.png" width="375px" alt="screenshot van js om detail kaart open/dicht te forceren">
+  <img src="readme-images/screenshot_js_detail_kaart.png" width="375px" alt="screenshot van js om detail kaart open/dicht te forceren">
+  <img src="readme-images/screenshot_js_detail_kaart_screenreader.png" width="375px" alt="screenshot van js om detail kaart open/dicht te forceren">
 
 
   
