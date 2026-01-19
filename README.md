@@ -140,7 +140,11 @@ Tot slot liep ik al langere tijd vast op de carrousels die op de KvK-website wor
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Tijdens de toegankelijkheidstest heb ik gezien dat de website op meerdere punten sterk is verbeterd. Het kleurcontrast tussen tekst en achtergrond voldoet goed, waardoor de inhoud duidelijk leesbaar is voor gebruikers met verminderd zicht. Daarnaast heb ik overbodige headings verwijderd, waardoor de pagina niet meer vol staat met onnodige koppen. Dit zorgt ervoor dat navigeren via headings met een screenreader veel soepeler verloopt.
+
+Ook heb ik alle decoratieve SVG’s correct verborgen voor screenreaders met ARIA, zodat deze niet meer worden voorgelezen en gebruikers alleen relevante informatie horen. De navigatie met het toetsenbord werkt goed: tabben door de pagina verloopt logisch, links en interactieve elementen staan in de juiste volgorde en de structuur is overzichtelijk. Ook navigatie via headings en links werkt zoals verwacht.
+
+Ten opzichte van de vorige versie is de snelheid van navigeren duidelijk verbeterd, omdat gebruikers minder stappen hoeven te maken en minder irrelevante elementen tegenkomen. Over het geheel genomen vind ik dat de toegankelijkheid van mijn website nu erg dicht in de buurt komt van de al hoge toegankelijkheid van de website van de KVK. Daarbij is de HTML-structuur een stuk netter opgezet en consequent semantisch toegepast, wat de toegankelijkheid en onderhoudbaarheid ten goede komt.
 
 </details>
 
