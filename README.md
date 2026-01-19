@@ -232,10 +232,11 @@ De grootste taak die nu nog voor mij ligt is het correct en volledig bedienbaar 
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event (
+  1. https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event
   2. https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event
   3. https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events
   4. https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
   5. https://developer.mozilla.org/en-US/docs/Web/API/FocusEvent/relatedTarget
+  6. ChatGPT bij het helpen onderzoeken naar hoe ik de detail kaarten kan bedienen met focus state van de screenreader
 
 </details>
