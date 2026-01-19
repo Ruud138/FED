@@ -105,14 +105,6 @@ Maarrrrr ik vind dat de KvK het best netjes doet in verhouding tot sommige websi
   Deze week dacht ik lekker op weg te zijn en had ik de gehele HTML van mijn website al opgesteld. Deze website bleek alleen helaas toch niet helemaal te voldoen dus dit werk was voor niets geweest. Ik hoop volgende week een stuk meer gedaan te kunnen hebben.
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-
-
-  ### Verslag van meeting
-  
-
 </details>
 
 
@@ -136,12 +128,7 @@ Daarnaast heb ik deze week veel nagedacht over het gebruik van het A element. Ik
 Tot slot liep ik al langere tijd vast op de carrousels die op de KvK-website worden gebruikt. Ik heb hier een soort haat-liefde relatie mee. Vaak ziet het er misschien simpel uit maar nog vaker onderschat ik dit en loop ik al snel vast. Ik heb tijdens mijn gesprek daarom lekker veel vragen kunnen stellen en in de klas verder kunnen werken en direct weer feedback kunnen krijgen van de begeleider.
 
 
-  ### Agenda voor meeting
-  
-
-
-  ### Verslag van meeting
-
+  ### Vragen die ik heb
 
 </details>
 
@@ -169,26 +156,18 @@ Tot slot liep ik al langere tijd vast op de carrousels die op de KvK-website wor
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Deze periode is voor mij persoonlijk erg zwaar geweest. Mijn opa is tegen het eind van het vak ernstig ziek geworden en uiteindelijk overleden. Hierdoor heb ik niet altijd de motivatie of mentale ruimte kunnen vinden om met volle focus aan school te werken. Ondanks dit alles heb ik gelukkig wel momenten kunnen vinden waarin ik de rust en energie had om verder te gaan met de opdracht. Gelukkig heb ik daarmee toch, ook al ging het niet altijd even makkelijk, stappen kunnen blijven zetten.
+
+In deze week heb ik het correct toepassen van de <a>-elementen afgerond. Na veel twijfel en het maken van de afweging heb ik ervoor gekozen om niet alleen de tekst maar het volledige blok (bestaande uit tekst, afbeelding en padding) klikbaar te maken. Op de website van de Kamer van Koophandel zijn deze onderdelen namelijk duidelijk vormgegeven als losse blokken. Voor de gebruiker voelen deze aan als een soort knop waardoor je ook verwacht dat het gehele element klikbaar is. Vanuit dat perspectief vond ik dit de meest logische en gebruiksvriendelijke keuze.
+
+<img src="readme-images/voorbeeld_a_element_kvk_website.png" alt="breakdown van de hele home pagina">
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+Daarnaast heb ik deze week de carrousels succesvol kunnen afronden. In eerste instantie had ik de slider van de carrousel opgebouwd met een div voor de balk en een span voor de slider/thumb. Omdat CSS geen volledige controle biedt over het stylen van een scrollbalk, ging ik er vanuit dat JavaScript noodzakelijk was om de positie van de gebruiker in de carrousel te meten en de slider hierop te laten reageren. Dit is ook de manier waarop de KvK-website dit oplost.
+Toch voelde deze aanpak voor mij omslachtig en bovendien in strijd met de regel “geen CSS met JavaScript”. Tijdens een gesprek met de studentenbegeleider werd ik gewezen op een voorbeeld op DLO waarin gebruik werd gemaakt van ::scroll-marker en ::scroll-marker-group om een positie-indicator voor een carrousel te maken. Na flink wat uitzoeken, experimenteren en puzzelen is het me gelukt om deze normaal ronde markers te stylen en ze (soort van) te laten functioneren als een slider. Hier ben ik erg trots op, omdat dit een oplossing is die zowel technisch interessant als semantisch sterker is.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  ### Vragen die ik heb
 
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
